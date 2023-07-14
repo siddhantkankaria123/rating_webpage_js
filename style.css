@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(216, 12%, 8%);
+  gap: 2rem;
+}
+.container-one {
+  width: fit-content;
+  /* padding: 2%; */
+  border-radius: 50%;
+}
+.star-icon {
+  height: 30px;
+}
+#rating-sections {
+  height: 55%;
+  width: 30%;
+  border-radius: 35px;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  padding-left: 2%;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: "Overpass", sans-serif;
+}
+.container-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading-one {
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+}
+.paragraph {
+  padding-right: 2%;
+  font-size: 1.2rem;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+}
+.containerthree {
+  /* background-color: red; */
+  display: flex;
+  gap: 2rem;
+}
+.stars {
+  cursor: pointer;
+  background-color: hsl(216, 12%, 8%);
+  padding: 2% 4% 2% 4%;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: hsl(217, 12%, 63%);
+}
+.stars:hover {
+  background-color: orangered;
+}
+.stars:active {
+  background-color: grey;
+}
+button {
+  outline: none;
+  padding: 2%;
+  border-radius: 15px;
+  width: 90%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: hsl(25, 97%, 53%);
+  border-color: hsl(25, 97%, 53%);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+button:hover {
+  cursor: pointer;
+  border-color: white;
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+#thankyou_section {
+  height: 55%;
+  width: 30%;
+  border-radius: 35px;
+  background-color: hsl(213, 19%, 18%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  gap: 1rem;
+  flex-direction: column;
+  font-family: "Overpass", sans-serif;
+}
+.container-twos {
+  padding: 2%;
+  border-radius: 15px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+}
+.container-threes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading-ones {
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+}
+.paragraphs {
+  text-align: center;
+  padding: 4%;
+  font-size: 1.1rem;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+}
+@media (max-width: 1000px) {
+  #rating-sections {
+    height: 55%;
+    width: 80%;
+    padding-left: 4%;
+  }
+  #thankyou_section {
+    height: 55%;
+    width: 80%;
+    padding-left: 4%;
+  }
+}
